@@ -17,8 +17,6 @@ module BookOption
     created_book = Book.new(publisher, cover_state, published_date)
 
     add_label_info(created_book)
-    add_author_info(created_book)
-    add_genre_info(created_book)
 
     @books << created_book
     puts 'Book successfully added ! '

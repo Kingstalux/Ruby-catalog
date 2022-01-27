@@ -30,9 +30,9 @@ module BookOption
       @books.each_with_index do |book, index|
         print "#{index + 1} book :"
         print "publisher: #{book.publisher}"
-        print " "
+        print ' '
         print "publish date: #{book.published_date}"
-        print " "
+        print ' '
         print "cover state: #{book.cover_state}"
         puts "\n"
       end

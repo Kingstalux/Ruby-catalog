@@ -8,7 +8,7 @@ module LabelOption
       @labels.each_with_index do |label, index|
         print "#{index + 1} book :"
         print "title: #{label.title}"
-        print "  "
+        print '  '
         puts "color: #{label.color}"
         print "\n"
       end

@@ -9,6 +9,7 @@ module LabelOption
         print "#{index + 1} book :"
         print "title: #{label.title}"
         print "color: #{label.color}"
+        print "\n"
       end
     end
   end

@@ -32,6 +32,7 @@ module BookOption
         print "publisher: #{book.publisher}"
         print "publish date: #{book.published_date}"
         print "cover state: #{book.cover_state}"
+        puts "\n"
       end
 
     end

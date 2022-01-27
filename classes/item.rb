@@ -17,3 +17,4 @@ class Item
     @archived = can_be_archived?
   end
 end
+puts DateTime.now

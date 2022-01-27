@@ -1,7 +1,5 @@
 require_relative './classes/label'
 
-
-
 module Connections
   def add_label_info(item)
     print 'What is the label of the item?'

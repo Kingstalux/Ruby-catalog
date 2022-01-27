@@ -2,6 +2,7 @@ require_relative '../modules/book_option'
 require_relative '../modules/label_option'
 require_relative '../modules/book_storage'
 require_relative '../modules/label_storage'
+require 'json'
 
 class App
   include BookOption

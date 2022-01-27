@@ -1,4 +1,11 @@
 class App
+  include BookOption
+  include LabelOption
+
+  def initialize
+    @books = []
+    @labels = []
+  end
   def menu
     puts 'Welcome to your Catalog of things!'
     puts "\n"
@@ -23,6 +30,12 @@ class App
 
   def homepage(input)
     case input
+    when 1
+      display_books
+    when 5
+      display_label
+    when 7
+      create_book
     when 7
       puts 'Thanks for using our library app , hope to see you soon ! '
       exit

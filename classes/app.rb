@@ -1,3 +1,6 @@
+require_relative '../modules/book_option'
+require_relative '../modules/label_option'
+
 class App
   include BookOption
   include LabelOption

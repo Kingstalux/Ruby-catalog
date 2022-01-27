@@ -1,5 +1,5 @@
 require_relative '../classes/label'
-require_relative './connections'
+require_relative '../connections'
 require_relative '../classes/book'
 
 module BookOption

@@ -1,10 +1,16 @@
 require_relative '../classes/label'
-require_relative '../connections'
+require_relative './connections'
 require_relative '../classes/book'
+require_relative './label_option'
+require_relative './book_storage'
+require_relative './label_storage'
+require 'json'
 
 module BookOption
   include Connections
-
+  include LabelStorage
+  include BookStorage
+  include LabelOption
   def create_book
     print 'Published date:'
     published_date = gets.chomp
@@ -19,6 +25,8 @@ module BookOption
     add_label_info(created_book)
 
     @books << created_book
+    save_book
+    save_label
     puts 'Book successfully added ! '
   end
 

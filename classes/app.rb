@@ -1,40 +1,39 @@
 class App
-    
   def menu
-      puts 'Welcome to your Catalog of things!'
-      puts "\n"
-      puts 'Please choose an option by entering a number: '
-  
-      @options = {
-        '1': 'List all books',
-        '2': 'List all music albums',
-        '3': 'List all genres',
-        '4': 'List all labels',
-        '5': 'Add a book',
-        '6': 'Add a music album',
-        '7': 'Exit App'
-      }
-  
-      @options.each do |index, string|
-        puts "#{index} - #{string}"
-      end
-      print "\nEnter option from above list: "
-      gets.chomp.to_i
+    puts 'Welcome to your Catalog of things!'
+    puts "\n"
+    puts 'Please choose an option by entering a number: '
+
+    @options = {
+      '1': 'List all books',
+      '2': 'List all music albums',
+      '3': 'List all genres',
+      '4': 'List all labels',
+      '5': 'Add a book',
+      '6': 'Add a music album',
+      '7': 'Exit App'
+    }
+
+    @options.each do |index, string|
+      puts "#{index} - #{string}"
+    end
+    print "\nEnter option from above list: "
+    gets.chomp.to_i
   end
 
   def homepage(input)
-      case input
-      when 7
-        puts 'Thanks for using our library app , hope to see you soon ! '
-        exit
-      else
-          puts 'please Enter a valid number from 1 to 7'
-      end
+    case input
+    when 7
+      puts 'Thanks for using our library app , hope to see you soon ! '
+      exit
+    else
+      puts 'please Enter a valid number from 1 to 7'
+    end
   end
 
   def run
-      loop do
-          homepage(menu)
-      end
+    loop do
+      homepage(menu)
+    end
   end
 end

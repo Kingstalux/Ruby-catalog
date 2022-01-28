@@ -18,7 +18,6 @@ def options
   puts '6: Add a music album'
   puts '7: Exit app'
   print "\nEnter option from above list: "
-  book-storage
 end
 
 def homepage1(input)

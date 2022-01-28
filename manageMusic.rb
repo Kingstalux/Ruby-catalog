@@ -33,7 +33,11 @@ def list_musics
     puts ' '
 end
 
-
+def list_genre
+    puts ' '
+    @genre_arr.each {|x| puts "Name: #{x.name}"}
+    puts ' '
+end
 
 def save_albums
     albums_json = []

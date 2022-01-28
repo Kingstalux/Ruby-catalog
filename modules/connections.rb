@@ -1,4 +1,5 @@
-require_relative './classes/label'
+require_relative '../classes/label'
+require 'json'
 
 module Connections
   def add_label_info(item)

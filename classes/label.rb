@@ -16,4 +16,11 @@ class Label
       item.label = self
     end
   end
+
+  def to_json(json)
+    json.generate({
+                    title: title,
+                    color: color
+                  })
+  end
 end

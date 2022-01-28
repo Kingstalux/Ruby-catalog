@@ -1,8 +1,12 @@
 require_relative '../modules/book_option'
 require_relative '../modules/label_option'
 require_relative '../manage_music'
+require_relative '../modules/book_storage'
+require_relative '../modules/label_storage'
+require 'json'
 
 def options
+  Dir.mkdir 'json' unless Dir.exist? 'json'
   puts ' '
   puts 'Please choose an option by entering a number: '
   puts ' '
@@ -14,6 +18,7 @@ def options
   puts '6: Add a music album'
   puts '7: Exit app'
   print "\nEnter option from above list: "
+  book-storage
 end
 
 def homepage1(input)
@@ -46,11 +51,19 @@ end
 class App
   include BookOption
   include LabelOption
+  include LabelStorage
+  include BookStorage
+
   def initialize
     @books = []
     @labels = []
     initialize_musics
     initialize_genre
+  end
+
+  def load_data
+    read_books
+    read_labels
   end
 
   def menu

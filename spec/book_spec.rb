@@ -19,7 +19,7 @@ describe Book do
     it 'correct publisher / cover state / published date' do
       expect(@book.publisher).to eql 'Phone'
       expect(@book.cover_state).to eql 'bad'
-      expect(@book.published_date).to eql Date.parse('2020/12/12')
+      expect(@book.published_date).to eql Date.parse('2025/12/07')
     end
 
     it 'can_be_archived? method works accordingly' do

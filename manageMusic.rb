@@ -47,7 +47,16 @@ def save_albums
     File.write('./albums.json', albums_json.to_json)
 end
 
-
+def save_genre
+    genre_json = []
+    @genre_arr.each do |genre|
+      g = {
+        'name' => genre.name
+      }
+      genre_json.push(g)
+    end
+    File.write('./genre.json', genre_json.to_json)
+end
 
 def initialize_musics
     music_file = './albums.json'
@@ -70,4 +79,23 @@ def get_album(json)
     end
 end
 
+def initialize_genre
+    genre_file = './genre.json'
+    f = File.read(genre_file)
+    if f.empty? == false
+        json = JSON.parse(f)
+        get_genre(json)
+    else
+        @genre_arr = []
+    end
+end
 
+def get_genre(json)
+    @genre_arr = []
+    i = 0
+    while i < json.length
+        g = Genre.new(json[i]['name'])
+        @genre_arr.push(g)
+        i += 1
+    end
+end

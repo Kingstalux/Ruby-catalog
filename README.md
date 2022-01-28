@@ -43,10 +43,11 @@ To run the tests:
 - LinkedIn: [alexander odufuye](https://www.linkedin.com/in/codingrex/)
 
 
-👤 **Kingsley Nku**
+👤 **Ngu Kingsely**
 
 - GitHub: [@Kingstalux](https://github.com/Kingstalux)
-- LinkedIn: [kingsley junior cho](https://www.linkedin.com/in//)
+- Twitter: [@NguKingsley](https://twitter.com/NguKingsley)
+- LinkedIn: [Ngu Kingsely](https://www.linkedin.com/in/ngu-kingsely-junior-cho-974b60136/)
 
 
 

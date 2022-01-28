@@ -1,19 +1,28 @@
 require_relative '../modules/book_option'
 require_relative '../modules/label_option'
+require_relative '../modules/book_storage'
+require_relative '../modules/label_storage'
+require 'json'
 
 class App
   include BookOption
   include LabelOption
+  include LabelStorage
+  include BookStorage
 
   def initialize
     @books = []
     @labels = []
   end
 
+  def load_data
+    read_books
+    read_labels
+  end
+
   def menu
+    Dir.mkdir 'json' unless Dir.exist? 'json'
     puts 'Welcome to your Catalog of things!'
-    puts "\n"
-    puts 'Please choose an option by entering a number: '
 
     @options = {
       '1': 'List all books',

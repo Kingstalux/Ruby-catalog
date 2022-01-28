@@ -11,7 +11,7 @@ describe MusicAlbum do
         end
 
 describe 'can archive method' do
-      it 'returns false since on spotify is set to false' do
+      it 'should over ride method from parent class' do
         expect(@music_album.can_be_archived?).to eql false
       end
     end

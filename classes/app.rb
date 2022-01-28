@@ -1,5 +1,6 @@
 require_relative '../modules/book_option'
 require_relative '../modules/label_option'
+require_relative '../manageMusic'
 
 class App
   include BookOption
@@ -8,6 +9,8 @@ class App
   def initialize
     @books = []
     @labels = []
+    initialize_musics
+    initialize_genre
   end
 
   def menu
@@ -36,11 +39,19 @@ class App
     case input
     when 1
       display_books
+    when 2
+      list_musics
+    when 3
+      list_genre
     when 4
       display_label
     when 5
       create_book
+    when 6
+      add_music
     when 7
+      save_albums
+      save_genre
       puts 'Thanks for using our library app , hope to see you soon ! '
       exit
     else

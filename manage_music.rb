@@ -27,14 +27,14 @@ end
 
 def list_musics
   puts ' '
-  @musics_arr.each { |x| puts "Publish date: #{x.published_date}, On Spotify: #{x.on_spotify}" }
-  puts ' '
+  @musics_arr.each do |x|
+    puts "[Music Album #{@musics_arr.find_index(x) + 1}] Publish date: #{x.published_date}, On Spotify: #{x.on_spotify}"
+  end
 end
 
 def list_genre
   puts ' '
-  @genre_arr.each { |x| puts "Name: #{x.name}" }
-  puts ' '
+  @genre_arr.each { |x| puts "[Genre #{@genre_arr.find_index(x) + 1}] Name: #{x.name}" }
 end
 
 def save_albums

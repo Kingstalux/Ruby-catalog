@@ -3,6 +3,7 @@ require_relative '../modules/label_option'
 require_relative '../manage_music'
 
 def options
+  puts ' '
   puts 'Please choose an option by entering a number: '
   puts ' '
   puts '1: List all books'
@@ -39,8 +40,6 @@ def homepage2(input)
     save_genre
     puts 'Thanks for using our library app , hope to see you soon ! '
     exit
-  else
-    puts 'please Enter a valid number from 1 to 7'
   end
 end
 

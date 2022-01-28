@@ -38,7 +38,7 @@ def list_genre
   puts ' '
   @genre_arr.each do |x|
     puts "[Genre #{@genre_arr.find_index(x) + 1}] Name: #{x.name}"
-    puts '_______________________________________________________________________'
+    puts '_______________________________________'
     puts ' '
   end
 end

@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # ruby-Catalog
-
+[image]./Capture.PNG
 
 
 Imagine that you want to keep a record of different types of things you won: books, music albums, movies, and games. This  will allow a you to:
@@ -29,10 +29,12 @@ To run the tests:
 - Run `rspec spec --format documentation` to run the tests
 
 # Catalog of things database
-![image]()
+![image](./Capture.PNG)
 # Catalog of things UML diagram
 ![image](https://user-images.githubusercontent.com/60612329/151547084-365a38e6-efbe-45eb-a934-ead7ac7fd4b5.png)
 
+# Video of project description 
+![video](./video1941052006.mp4)
 
 ## Authors
 

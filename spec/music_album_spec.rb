@@ -1,19 +1,20 @@
 require_relative './spec_helper'
 
-# describe Book do
-#   before :each do
-#     @book = Book.new('Inferno', 'Dan Brown')
-#   end
+describe MusicAlbum do
+    before :each do
+        @music_album = MusicAlbum.new('01-01-1900')
+    end
 
-#   context 'create a book instance' do
-#     it 'takes two parameters and returns a Book object' do
-#       expect(@book).to be_an_instance_of Book
-#     end
+    context 'create a music album instance' do
+        it 'takes one to three parameters and returns a MusicAlbum object' do
+            expect(@music_album).to be_an_instance_of MusicAlbum
+        end
 
-#     describe '#author' do
-#       it 'returns the correct author' do
-#         expect(@book.author).to eql 'Dan Brown'
-#       end
-#     end
-#   end
-# end
+describe 'can archive method' do
+      it 'returns false since on spotify is set to false' do
+        expect(@music_album.can_be_archived?).to eql false
+      end
+    end
+end
+end
+
